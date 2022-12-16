@@ -7,9 +7,7 @@ html, body {
     box-sizing: border-box;
   } 
   
-  body {
-    margin: 0;
-  }  
+ 
 /* Universal selector - Selects every tag */
 * {
 	margin: 0;
@@ -17,14 +15,15 @@ html, body {
 /* 	border: 1px solid red; */
 }
 
-body{
-    /*---------------------------------background image------------------------------------  */
+body {
+	margin: 0;
+    /*  ---------------------------------background image------------------------------------  */
         
-		background-image: url(../images/Background_Only.jpg); 
+		background-image: url(../images/WebsiteBackNoHello.jpg); 
         background-repeat: no-repeat;
         background-size: 100%;
     
-    /*--------------------fonts-------------------*/
+    /*  --------------------fonts-------------------  */
     
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
@@ -41,8 +40,8 @@ body{
 		/* smargin-left: 176px; */
 		margin-bottom: 18px;
 		color: #6d85a8;
-	
 	} 
+
     h1 {
         
 		font-family: 'Open Sans', sans-serif;
@@ -60,25 +59,28 @@ body{
 		below means same as above just written in one line
 		border: solid 1px magenta;	*/
     }
-/*---------------------------Script Font-------------------------------------------  */
+/*  ---------------------------Script Font-------------------------------------------  */
 
 	#homeIntro {
 		font-family: 'Mrs Saint Delafield', cursive;
 		font-size: 80px;
 	
 	}	
-/*___________________________Navigation Bar____________________________________  */
+/*  ___________________________Navigation Bar____________________________________  */
     /* The navbar container */
 	.topnav {
 		border: 1px solid black;
 		overflow: hidden;
-		background-color: #6d85a8;
+		/* background-color: #6d85a8; */
 		width: 100%;
 		height: 25%;
 		padding: 2%;
 		align-items: flex-start;
 		align-content: center;
 		display: inline-flexbox;
+		color: white;
+		font-size: 28px;
+		margin: 0px 0 0 0;/* Top right bottom left */
 	}
 
 /* Clear floats after the columns */
@@ -102,26 +104,15 @@ body{
 		justify-content: flex-start;
 		clear: both;
 
-
 	}
-	
-	
+
 	/* Class selector */
-	 .yellowbar {
+	 /* .yellowbar { 
 		background-color: #FAD7A0;
 		width: 100%;
 		height: 15%;
-	} 
-	.topnav {
-		/* 		text-align: right; */
-		/*         padding: 18px; */
-				color: white;
-		/*         margin-top: 72px; */
-		/*         margin-right: 36px; */
-				font-size: 28px;
-				margin: 0px 0 0 0;/* Top right bottom left */
-				
-			}
+	} */
+	
 		
 			/* Grouped selectors */
 			.topnav, li {
@@ -143,7 +134,7 @@ body{
 			.topnav ul {
 		/* 		border: 1px solid black; */
 				text-align: right;
-				padding: 0 80px 0 0; /* Top right bottom left */
+				padding: 0 5% 0 0; /* Top right bottom left */
 			}
 		
 			/* The descendant selector matches all elements that are descendants of a specified element. */
@@ -159,10 +150,11 @@ body{
     p {
      	/* margin-top: 450px; */
       	margin-bottom: 140px;
-      	margin-right: 150px;
-      	margin-left: 176px;
+      	margin-right: auto; 
+      	margin-left: auto; 
 		font-size: 24px;
-		/* border: 1px solid magenta; */
+		width: 80%;
+		border: 1px solid magenta;
     }
 
 	.printSamples {
@@ -223,69 +215,32 @@ th{
    /*  -------------------------------------------------Footer------------------------------------------------  */
    footer {
 	text-align: right;
-	padding: 20px;
+	padding: 1.5%;
 	background-color: #f07746;
 	color: black;
-	margin-top: 100px;
 	font-size: small;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
 
 }
 
-/* Tablet Styles */
+/* _______________________________  Tablet Styles___________________________________________________________ */
 @media only screen and (min-width: 561px) and (max-width: 1023px) {
     body {
         background-color: lightpink;
-        font-size: 50px;
+        font-size: 30px;
     }
 	/* Class selector */
 	.topnav {
 				font-size: 13px;
 				margin: 15px 0 0 0;/* Top right bottom left */
-				
 			}
-			/* Grouped selectors */
-			.topnav, li {
-		/* 		border: 1px solid magenta; */
-			}
-			/* Descendant selectors - Links inside .topnav */
-			.topnav a {
-				color: white;
-				text-decoration: none;
-			}
-			.topnav a:hover {
-				text-decoration: underline;
-				color: #FAD7A0;
-			}
-			/* Descendant selectors */
-			.topnav ul {
-		/* 		border: 1px solid black; */
-				text-align: right;
-				padding: 0 80px 0 0; /* Top right bottom left */
-			}
-		
-			/* The descendant selector matches all elements that are descendants of a specified element. */
-			.topnav li {
-				list-style-type: none;
-				display: inline;
-				margin: 0 20px 0 20px;
-			}
+	p {
+				font-size: 18px;
+		}
 }
-/*----------------------------     body copy tablet-------------------------------------  */
-    p {
-		/* margin-top: 450px; */
-		margin-bottom: 140px;
-		margin-right: 150px;
-		margin-left: 176px;
-	   	font-size: 18px;
-	   /* border: 1px solid magenta; */
-   }
-   /*  ------------------------------------------ Footer Tablet------------------------------------------------  */
-   footer {
-	text-align: right;
-	padding: 10pxpx;
-	margin-top: 100px;
 
-}
 
 /* Mobile Styles  */
 @media (max-width: 560px) {
@@ -295,7 +250,9 @@ th{
 		/* background-image: url(../images/WebsiteBackNoHello.jpg);
 		background-size: 100%; */
     }
-
+	p {
+		font-size: 12px;
+}
 
 	.navLinks{
 		font-size: 13px;
