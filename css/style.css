@@ -3,9 +3,9 @@ html, body {
   width: 100%;
 
 }
-/* * { 
+* { 
     box-sizing: border-box;
-  } */
+  } 
   
   body {
     margin: 0;
@@ -118,7 +118,7 @@ body{
 				color: white;
 		/*         margin-top: 72px; */
 		/*         margin-right: 36px; */
-				font-size: 30px;
+				font-size: 28px;
 				margin: 0px 0 0 0;/* Top right bottom left */
 				
 			}
@@ -163,8 +163,8 @@ body{
       	margin-left: 176px;
 		font-size: 24px;
 		/* border: 1px solid magenta; */
-
     }
+
 	.printSamples {
 		margin: 0 auto 0 auto;
 		display: block;
@@ -227,6 +227,7 @@ th{
 	background-color: #f07746;
 	color: black;
 	margin-top: 100px;
+	font-size: small;
 
 }
 
@@ -238,33 +239,23 @@ th{
     }
 	/* Class selector */
 	.topnav {
-		/* 		text-align: right; */
-		/*         padding: 18px; */
-				color: white;
-				justify-content: flex-end;
-		/*         margin-top: 72px; */
-		/*         margin-right: 36px; */
 				font-size: 13px;
 				margin: 15px 0 0 0;/* Top right bottom left */
 				
 			}
-		
 			/* Grouped selectors */
 			.topnav, li {
 		/* 		border: 1px solid magenta; */
 			}
-		
 			/* Descendant selectors - Links inside .topnav */
 			.topnav a {
 				color: white;
 				text-decoration: none;
 			}
-		
 			.topnav a:hover {
 				text-decoration: underline;
 				color: #FAD7A0;
 			}
-		
 			/* Descendant selectors */
 			.topnav ul {
 		/* 		border: 1px solid black; */
@@ -279,18 +270,35 @@ th{
 				margin: 0 20px 0 20px;
 			}
 }
+/*----------------------------     body copy tablet-------------------------------------  */
+    p {
+		/* margin-top: 450px; */
+		margin-bottom: 140px;
+		margin-right: 150px;
+		margin-left: 176px;
+	   	font-size: 18px;
+	   /* border: 1px solid magenta; */
+   }
+   /*  ------------------------------------------ Footer Tablet------------------------------------------------  */
+   footer {
+	text-align: right;
+	padding: 10pxpx;
+	margin-top: 100px;
+
+}
+
 /* Mobile Styles  */
 @media (max-width: 560px) {
     body {
         background-color: lightgreen;
-        font-size: 30px;
+        font-size: 12px;
 		/* background-image: url(../images/WebsiteBackNoHello.jpg);
 		background-size: 100%; */
     }
 
 
 	.navLinks{
-		font-size: 10px;
+		font-size: 13px;
 	}
 }
 
